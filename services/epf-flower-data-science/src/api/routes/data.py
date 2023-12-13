@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from src.services.data import download_dataset, load_dataset, process_data
+from src.services.data import download_dataset, load_dataset, process_dataset, split_dataset
 
 router = APIRouter()
 
@@ -13,4 +13,8 @@ def load_data_router():
 
 @router.get("/process_data")
 def process_data_router():
-    return process_data()
+    return process_dataset()
+
+@router.get("/split_data")
+def split_dataset_router():
+    return split_dataset()
