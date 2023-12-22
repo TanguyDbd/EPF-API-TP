@@ -1,0 +1,8 @@
+# Fichiers générés automatiquement
+services\epf-flower-data-science\__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Fichiers credentials personnel
+config\firestore-dabadie-tanguy-firebase-adminsdk-7ddq1-45415a73b6.json
